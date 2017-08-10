@@ -64,9 +64,9 @@
       <Project>{acbe0c93-82de-4842-ae5e-0e7b5585a11b}</Project>
       <Name>libDados</Name>
     </ProjectReference>
-    <ProjectReference Include="..\libHitsInterceptor\libHitsInterceptor.csproj">
+    <ProjectReference Include="..\libHintsInterceptor\libHintsInterceptor.csproj">
       <Project>{f3c9539a-56c4-4889-adb1-4c29399d9831}</Project>
-      <Name>libHitsInterceptor</Name>
+      <Name>libHintsInterceptor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

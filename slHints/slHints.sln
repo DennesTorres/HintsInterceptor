@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libHitsInterceptor", "libHitsInterceptor\libHitsInterceptor.csproj", "{F3C9539A-56C4-4889-ADB1-4C29399D9831}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libHintsInterceptor", "libHintsInterceptor\libHintsInterceptor.csproj", "{F3C9539A-56C4-4889-ADB1-4C29399D9831}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libDados", "libDados\libDados.csproj", "{ACBE0C93-82DE-4842-AE5E-0E7B5585A11B}"
 EndProject
