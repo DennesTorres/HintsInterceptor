@@ -18,7 +18,7 @@ namespace libHintsInterceptor.Base
         /// <returns></returns>
         public virtual string Hint()
         {
-            return this.GetType().Name;
+            return this.GetType().Name.Replace('_', ' ').ToUpper();
         }
 
     }
