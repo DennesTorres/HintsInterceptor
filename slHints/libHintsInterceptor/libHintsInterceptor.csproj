@@ -51,11 +51,12 @@
   <ItemGroup>
     <Compile Include="Base\HintBase.cs" />
     <Compile Include="Base\LockHint.cs" />
-    <Compile Include="Base\QueryHint.cs" />
     <Compile Include="Base\TableHint.cs" />
+    <Compile Include="Base\QueryHint.cs" />
     <Compile Include="HintsCollection.cs" />
     <Compile Include="HintsInterceptor.cs" />
     <Compile Include="Hints\MaxDop_1.cs" />
+    <Compile Include="Hints\Optimize_For_Unknown.cs" />
     <Compile Include="Hints\ReadPast.cs" />
     <Compile Include="Hints\Recompile.cs" />
     <Compile Include="Hints\RepeatableRead.cs" />

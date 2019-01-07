@@ -43,6 +43,10 @@ namespace winClient
             var res5 = res.ToList();
 
             HintsInterceptor.Clear();
+
+            HintsInterceptor.Add(new Optimize_For_Unknown());
+
+            var res6 = res.ToList();
         }
     }
 }

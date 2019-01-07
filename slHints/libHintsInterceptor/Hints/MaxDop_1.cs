@@ -9,9 +9,5 @@ namespace libHintsInterceptor.Hints
 {
     public class MaxDop_1 : QueryHint
     {
-        public override bool CheckCompatibility(HintsCollection hints)
-        {
-            return true;
-        }
     }
 }

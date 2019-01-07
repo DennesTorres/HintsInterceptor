@@ -8,7 +8,10 @@ namespace libHintsInterceptor.Base
 {
     public abstract class HintBase
     {
-        public abstract bool CheckCompatibility(HintsCollection hints);
+        public virtual bool CheckCompatibility(HintsCollection hints)
+        {
+            return true;
+        }
 
 
         /// <summary>

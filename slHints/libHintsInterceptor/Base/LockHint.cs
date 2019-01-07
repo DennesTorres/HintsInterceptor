@@ -11,15 +11,8 @@ namespace libHintsInterceptor.Base
     {
         public override bool CheckCompatibility(HintsCollection hints)
         {
-            if ((from x in hints.OfType<LockHint>()
-                    select x).Any())
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return !(from x in hints.OfType<LockHint>()
+                     select x).Any();
         }
     }
 }

@@ -10,9 +10,5 @@ namespace libHintsInterceptor.Hints
 {
     public class ReadPast : TableHint
     {
-        public override bool CheckCompatibility(HintsCollection hints)
-        {
-            return true;
-        }
     }
 }

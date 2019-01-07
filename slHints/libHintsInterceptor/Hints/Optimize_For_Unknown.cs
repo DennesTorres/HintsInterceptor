@@ -1,5 +1,4 @@
-﻿using libHintsInterceptor.Base;
-using libHintsInterceptor.HintKinds;
+﻿using libHintsInterceptor.HintKinds;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace libHintsInterceptor.Hints
 {
-    public class Recompile : QueryHint
+    public class Optimize_For_Unknown : QueryHint
     {
     }
 }
