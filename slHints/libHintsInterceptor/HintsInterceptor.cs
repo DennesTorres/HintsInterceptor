@@ -114,6 +114,11 @@ namespace libHintsInterceptor
             Hints.Clear();
         }
 
+        public static void Remove(HintBase hint)
+        {
+            Hints.Remove(hint);
+        }
+
         #endregion
 
     }

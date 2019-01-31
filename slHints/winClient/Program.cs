@@ -20,33 +20,33 @@ namespace winClient
 
             var res2 = res.ToList();
 
-            HintsInterceptor.Add(new ReadPast());
-            HintsInterceptor.Add(new RepeatableRead());
-            HintsInterceptor.Add(new Recompile());
+            using (var rp = new ReadPast())            
+            using (var rr = new RepeatableRead())
+            using (var r = new Recompile() )
+            {
+                var res3 = res.ToList();
+            }
 
-            var res3 = res.ToList();
 
-            HintsInterceptor.Clear();
 
-            HintsInterceptor.Add(new ReadPast() {TableName = "Orders" } );
-            HintsInterceptor.Add(new RepeatableRead() {TableName = "Customers" });
-            HintsInterceptor.Add(new Recompile());
+            using (var rp = new ReadPast() { TableName = "Orders" })
+            using (var rr = new RepeatableRead() { TableName = "Customers" })
+            using (var r = new Recompile())
+            {
+                var res4 = res.ToList();
+            }
 
-            var res4 = res.ToList();
+            using (var rp = new ReadPast())
+            using (var rr = new RepeatableRead() { TableName = "Customers" })
+            using (var r = new Recompile())
+            {
+                var res5 = res.ToList();
+            }
 
-            HintsInterceptor.Clear();
-
-            HintsInterceptor.Add(new ReadPast());
-            HintsInterceptor.Add(new RepeatableRead() { TableName = "Customers" });
-            HintsInterceptor.Add(new Recompile());
-
-            var res5 = res.ToList();
-
-            HintsInterceptor.Clear();
-
-            HintsInterceptor.Add(new Optimize_For_Unknown());
-
-            var res6 = res.ToList();
+            using (var ofu = new Optimize_For_Unknown())
+            {
+                var res6 = res.ToList();
+            }
         }
     }
 }

@@ -6,12 +6,35 @@ using System.Threading.Tasks;
 
 namespace libHintsInterceptor.Base
 {
-    public abstract class HintBase
+    public abstract class HintBase : IDisposable
     {
+        public HintBase()
+        {
+            HintsInterceptor.Add(this);
+        }
+
         public virtual bool CheckCompatibility(HintsCollection hints)
         {
             return true;
         }
+
+        #region IDisposable and Destructor
+        public void Dispose()
+        {
+            Suicide();
+            GC.SuppressFinalize(this);
+        }
+
+        ~HintBase()
+        {
+            Suicide();
+        }
+
+        private void Suicide()
+        {
+            HintsInterceptor.Remove(this);
+        }
+        #endregion
 
 
         /// <summary>
